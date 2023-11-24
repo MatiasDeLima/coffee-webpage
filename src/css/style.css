@@ -233,7 +233,7 @@ button {
 
 /* Active link */
 .active-link {
-    color: var(--first-color);
+  color: var(--first-color);
 }
 
 /*################ HOME ################*/
@@ -751,25 +751,25 @@ button {
 
 /* Show Scroll Up*/
 .show-scroll {
-    bottom: 3rem;
+  bottom: 3rem;
 }
 
 /*################ BREAKPOINTS ################*/
 /* For small devices */
 @media screen and (max-width: 320px) {
-    .container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-    .quality__img-small {
-        transform: translateX(-6rem);
-    }
+  .quality__img-small {
+    transform: translateX(-6rem);
+  }
 
-    .quality__buttons {
-        flex-direction: column;
-        row-gap: 1.25rem;
-    }
+  .quality__buttons {
+    flex-direction: column;
+    row-gap: 1.25rem;
+  }
 }
 
 /* For medium devices */
@@ -868,8 +868,6 @@ button {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-
-
 }
 
 /* For large devices */
@@ -898,7 +896,7 @@ button {
 
   .specialty__box {
     display: grid;
-    grid-template-columns: 2fr .5fr;
+    grid-template-columns: 2fr 0.5fr;
   }
   .specialty__group {
     text-align: initial;
@@ -941,7 +939,7 @@ button {
   }
 
   .products__card {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
   }
 
   .products__image {
@@ -950,7 +948,7 @@ button {
 
   .products__shape {
     padding: 2rem 0;
-    border-radius: .75rem .75rem 0 0;
+    border-radius: 0.75rem 0.75rem 0 0;
   }
 
   .products__data {
@@ -963,7 +961,7 @@ button {
 
   .products__button {
     font-size: 1.5rem;
-    padding: .75rem;
+    padding: 0.75rem;
     right: 1.5rem;
     top: -1.5rem;
   }
@@ -1059,7 +1057,7 @@ button {
   }
 }
 
-/* Alternative code, for larger screens */ 
+/* Alternative code, for larger screens */
 /* dimensions responsives 50% 1920px */
 @media screen and (min-width: 1700px) {
   .home {
@@ -1069,6 +1067,20 @@ button {
   }
 }
 /*################ LOAD ################*/
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 99%);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
 
 /* The size may vary depending 
 on the image of the gif */
+.load__gif {
+  width: 210px;
+}
