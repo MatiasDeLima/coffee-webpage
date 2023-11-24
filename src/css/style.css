@@ -4,7 +4,7 @@
 /*############### VARIABLES CSS ###############*/
 :root {
   --header-height: 3.5rem;
-  
+
   /*########## Colors ##########*/
   --first-color: hsl(36, 72%, 48%);
   --first-color-alt: hsl(36, 72%, 44%);
@@ -17,14 +17,14 @@
   --container-color: #fff;
 
   /*########## Font and typography ##########*/
-  --body-font: 'Lato', sans-serif;
+  --body-font: "Lato", sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*########## Font weight ##########*/
   --font-bold: 700;
@@ -41,8 +41,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -64,12 +64,17 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-bold);
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   line-height: 140%;
 }
 
@@ -116,7 +121,7 @@ button {
 }
 
 .section__title::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: 0;
@@ -126,71 +131,131 @@ button {
 }
 
 /*############### HEADER & NAV ###############*/
+.header {
+  width: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
 
+.nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: #fff;
+}
+
+.nav__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: var(--font-bold);
+}
+
+.nav__logo-img {
+  width: 0.75rem;
+}
+
+.nav__toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--black-color);
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 80%;
+    padding: 8rem 0 3rem 3rem;
+    z-index: var(--z-fixed);
+    transition: right 0.4s;
+    box-shadow: -4px 0 12px rgba(39, 69, 190, 0.06);
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+}
+
+.nav__link {
+  color: var(--text-color-light);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-bold);
+  transition: color 0.3s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__close {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+}
 
 /* Show menu */
-
+.show-menu {
+    right: 0;
+}
 
 /* Change background header */
 
-
 /* Active link */
-
 
 /*################ HOME ################*/
 
-
 /* Scroll image animate */
-
 
 /*################ BUTTON ################*/
 
-
 /*################ SPECIALTY ################*/
-
 
 /*################ PRODUCTS ################*/
 
-
 /* Active link products */
-
 
 /*################ QUALITY ################*/
 
-
 /*################ LOGOS ################*/
-
 
 /*################ BLOG ################*/
 
-
 /*################ FOOTER ################*/
-
 
 /*################ SCROLL BAR ################*/
 
-
 /*################ SCROLL UP ################*/
 
-
 /* Show Scroll Up*/
-
 
 /*################ BREAKPOINTS ################*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
 
-
 /* Alternative code, for larger screens */
 
-
 /*################ LOAD ################*/
-
 
 /* The size may vary depending 
 on the image of the gif */
