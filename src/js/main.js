@@ -3,16 +3,16 @@
 
 /*############### SHOW MENU ###############*/
 const navMenu = document.getElementById("nav-menu"),
-      navToggle = document.getElementById("nav-toggle"),
-      navClose = document.getElementById("nav-close")
+    navToggle = document.getElementById("nav-toggle"),
+    navClose = document.getElementById("nav-close")
 
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener("click", () => {
         navMenu.classList.add("show-menu");
     })
 }
 
-if(navClose) {
+if (navClose) {
     navClose.addEventListener("click", () => {
         navMenu.classList.remove("show-menu");
     })
@@ -30,18 +30,28 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener("click", linkAction));
 
 /*############### CHANGE BACKGROUND HEADER ###############*/
+const scrollHeader = () => {
+    const header = document.getElementById("header");
 
+    if (this.scrollY >= 50) {
+        header.classList.add("scroll-header")
+    } else {
+        header.classList.remove("scroll-header");
+    }
+}
+
+window.addEventListener("scroll", scrollHeader);
 
 /*############### MIXITUP FILTER PRODUCTS ###############*/
 
 
-/* Default filter products */ 
+/* Default filter products */
 
 
-/* Link active products */ 
+/* Link active products */
 
 
-/*############### SHOW SCROLL UP ###############*/ 
+/*############### SHOW SCROLL UP ###############*/
 
 
 /*############### SCROLL SECTIONS ACTIVE LINK ###############*/
